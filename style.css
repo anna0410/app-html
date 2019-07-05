@@ -16,10 +16,14 @@ div{
     width:200px;   
 }
 #header-top{
-    max-width:1000px;
     display: flex;
     justify-content: space-between;
 }
 .center{
     margin: auto;
+    max-width:1000px;
+}
+#header-menu-bg ul {
+    display: flex;
+
 }
