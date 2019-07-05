@@ -1,0 +1,25 @@
+
+div{
+    outline: 1px solid;
+    min-height: 300px;
+}
+#logo{
+    width: 200px;
+
+}
+#search{
+    max-width:300px;
+    width:100%;
+
+}
+#cart{
+    width:200px;   
+}
+#header-top{
+    max-width:1000px;
+    display: flex;
+    justify-content: space-between;
+}
+.center{
+    margin: auto;
+}
