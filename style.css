@@ -1,25 +1,128 @@
-
-div{
-    outline: 1px solid;
-    min-height: 300px;
+@font-face {
+    font-family: 'bebasbold';
+    src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('bebasneue/bebasneuebold.woff2') format('woff2'), url('bebasneue/bebasneuebold.woff') format('woff'), url('bebasneue/bebasneuebold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
-#logo{
-    width: 200px;
-
+* {
+    box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* Remove border from all elements */
+body, ul{
+    padding: 0;
+    margin: 0;
+}
+
+
+
 #search{
-    max-width:300px;
+    max-width:435px;
     width:100%;
-
+    position: relative;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+#search img{
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+#search input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 2px 10px;
 }
 #cart{
-    width:200px;   
+    width:110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
 }
 #header-top{
-    max-width:1000px;
     display: flex;
     justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .center{
     margin: auto;
+    max-width:1000px;
+}
+
+#header-menu-bg ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cart span{
+    font-size: 27px;
+    font-family: "bebasbold";
+    margin-top: 10px;
+}
+#header-menu-bg{
+    background-color: #4cb1ca;
+    padding: 12px 15px 8px 15px;
+}
+#header-menu-bg a{
+    color: white;
+    font-family: 'bebasbold';
+    font-size:22px;
+    padding: 0 20px;
+    border-right: 1px solid white;
+}
+#header-menu-bg ul li:last-child a{
+    padding-right:0;
+    border: none;
+}
+#header-menu-bg ul li:first-child a{
+    padding-left:0;
+}
+
+
+
+
+@media(max-width: 1030px){
+    #header-top{
+        padding: 15px;
+    }
+    #header-menu-bg ul{
+        justify-content: center;
+    }
+    #header-menu-bg ul a{
+        border: none;
+    }
+}
+}
+
+@media(max-width: 700px){
+    #header-top{
+        flex-direction: column;
+    }
+    #search{
+        margin: 15px 0;
+    }
+
+}
+@media(max-width: 530px){
+    #header-menu-bg ul li{
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    #header-menu-bg ul a{
+        padding: 0;
+        width: 100%;
+    }
+    #header-menu-bg ul li:last-child{    
+        margin-bottom: 0;      
+    }
 }

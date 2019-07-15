@@ -1,0 +1,6 @@
+    </header>
+    <form action="https://google.com">
+        <input name="username" type="text" placeholder="username" />
+        <input name="age" type="number" />
+        <button>Send</button>
+    </form>
